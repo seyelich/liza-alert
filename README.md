@@ -1,2 +1,3 @@
 # liza-alert
-Project month
+Project month  
+Trello: https://trello.com/b/PokxOlIN/команда-6
