@@ -1,6 +1,7 @@
 .page {
+  max-width: 1440px;
   width: 100%;
-  background-color: #E5E5E5;
+  background-color: #fcfcfc;
   font-family: 'Golos', 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
