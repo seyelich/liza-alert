@@ -13,3 +13,7 @@
   font-weight: 500;
   cursor: pointer;
 }
+
+.account-info_button:hover {
+  color: #f06000;
+}
