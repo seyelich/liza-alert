@@ -17,3 +17,9 @@
 @import url(../blocks/account-info/_name/account-info_name.css);
 
 @import url(../blocks/account-info/_perk-list/account-info_perk-list.css);
+
+@import url(../blocks/account-info/_perk/account-info_perk.css);
+
+@import url(../blocks/account-info/_perk-icon/account-info_perk-icon.css);
+
+@import url(../blocks/account-info/_button/account-info_button.css);

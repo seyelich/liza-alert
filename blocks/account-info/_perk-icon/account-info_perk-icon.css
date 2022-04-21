@@ -1,5 +1,3 @@
-.account-info_perk-icon.css {
-  width: 20px;
-  aspect-ratio: 1 / 1;
-
+.account-info_perk-icon {
+  margin-right: 12px;
 }
