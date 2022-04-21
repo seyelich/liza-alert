@@ -2,5 +2,7 @@
   display: grid;
   padding: 0 4.17% 0;
   grid-template-columns: 312px 1fr;
+  grid-template-rows: auto auto;
   column-gap: 1.67%;
+  row-gap: 32px;
 }
