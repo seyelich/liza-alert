@@ -1,0 +1,9 @@
+.account-info_perk-list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-self: start;
+  list-style: none;
+  font-size: 18px;
+}
