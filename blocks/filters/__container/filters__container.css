@@ -1,0 +1,9 @@
+.filters__container {
+  padding-top: 32px;
+  padding-bottom: 33px;
+  border-bottom: 1px solid #E6E7EB;
+}
+
+.filters__container:last-of-type {
+  border: 0;
+}

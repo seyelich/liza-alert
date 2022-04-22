@@ -1,0 +1,8 @@
+.filters__hide-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url(../../../images/filters__open-button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}

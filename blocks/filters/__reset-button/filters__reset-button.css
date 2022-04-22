@@ -1,0 +1,11 @@
+.filters__reset-button {
+  font-family: 'Golos', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+}

@@ -1,0 +1,10 @@
+.filters__checkboxes {
+  padding: 0;
+  margin: 32px 0 0;
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+}
