@@ -12,14 +12,14 @@
 
 @import url(../blocks/account-info/account-info.css);
 
-@import url(../blocks/account-info/_avatar/account-info_avatar.css);
+@import url(../blocks/account-info/__avatar/account-info__avatar.css);
 
-@import url(../blocks/account-info/_name/account-info_name.css);
+@import url(../blocks/account-info/__name/account-info__name.css);
 
-@import url(../blocks/account-info/_perk-list/account-info_perk-list.css);
+@import url(../blocks/account-info/__perk-list/account-info__perk-list.css);
 
-@import url(../blocks/account-info/_perk/account-info_perk.css);
+@import url(../blocks/account-info/__perk/account-info__perk.css);
 
-@import url(../blocks/account-info/_perk-icon/account-info_perk-icon.css);
+@import url(../blocks/account-info/__perk-icon/account-info__perk-icon.css);
 
-@import url(../blocks/account-info/_button/account-info_button.css);
+@import url(../blocks/account-info/__button/account-info__button.css);

@@ -1,4 +1,4 @@
-.account-info_button {
+.account-info__button {
   margin-top: 15px;
   padding: 13px 23px;
   display: flex;
@@ -14,7 +14,7 @@
   cursor: pointer;
 }
 
-.account-info_button:hover {
+.account-info__button:hover {
   color: #f06000;
   border-color: #f06000;
 }
