@@ -1,0 +1,13 @@
+.navigation__link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #212329;
+}
+
+.navigation__link:hover {
+  color: #F06000;
+}
