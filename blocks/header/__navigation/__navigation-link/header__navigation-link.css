@@ -1,4 +1,4 @@
-.navigation__link {
+.header__navigation-link {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -8,6 +8,6 @@
   color: #212329;
 }
 
-.navigation__link:hover {
+.header__navigation-link:hover {
   color: #F06000;
 }
