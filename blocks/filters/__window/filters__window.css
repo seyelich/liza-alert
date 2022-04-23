@@ -1,0 +1,6 @@
+.filters__window {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

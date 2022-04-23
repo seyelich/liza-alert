@@ -9,3 +9,7 @@
   background-color: inherit;
   border: none;
 }
+
+.filters__reset-button:hover {
+  opacity: 0.6;
+}

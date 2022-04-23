@@ -1,5 +1,7 @@
 .filters__checkbox {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.filters__checkbox:first-of-type {
+  margin-top: 0;
 }

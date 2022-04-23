@@ -1,4 +1,5 @@
 .filters__checkboxes {
+  display: none;
   padding: 0;
   margin: 32px 0 0;
   list-style-type: none;
