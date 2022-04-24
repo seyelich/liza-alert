@@ -10,6 +10,62 @@
 <body class="page">
   <main class="content">
     <h1 class="content__title">Профиль</h1>
+    <!--удалить данный контейнер перед обще версткой-->
+    <div></div>
+
+
+
+    <!-- Список карточек профиля -->
+    <ul class="profile-cards">
+    
+      <!-- Элементы списка карточек профиля -->
+      <li class="profile-card">
+        
+        <!-- Карточка личных данных -->
+        <div class="personal-card card">
+
+          <!-- Наполнение карточки личных данных -->
+          <h2 class="personal-card__title">Личные данные</h2> 
+          <fieldset class="personal-card__input"> 
+              <label for="username" class="personal-card__field-name">ФИО</label>
+              <input type="text" class="personal-card__fieldset" id="username" placeholder="ФИО" required> <!-- После подключение js данные будут вставляться данные профиля, т.к. все поля обязательны для заполнениядобавляем атрибут required -->
+              
+              <label for="birthday" class="personal-card__field-name">Дата рождения</label>
+              <input type="text" class="personal-card__fieldset" id="birthday" placeholder="Дата рождения" required> 
+              
+              <label for="region" class="personal-card__field-name">Географический регион</label>
+              <input type="text" class="personal-card__fieldset" id="region" placeholder="Географический регион" required> 
+              
+              <label for="nickname" class="personal-card__field-name">Позывной на форуме</label>
+              <input type="text" class="personal-card__fieldset" id="nickname" placeholder="Позывной на форуме" required> 
+              
+              <label for="photo" class="personal-card__field-name">Фото</label>
+              <input type="text" class="personal-card__fieldset personal-card__fieldset_photo" id="photo" placeholder="Фото" required> 
+          </fieldset>
+        <button class="button button_type_active-orange personal-card__save-button">Сохранить изменения</button>
+        </div>
+      </li>
+
+      <!-- Элементы списка карточек профиля -->
+      <li class="profile-card">
+
+        <!-- Карточка аккаунта -->
+        <div class="account card">
+          <h2 class="personal-card__title">Аккаунт</h2> 
+          <fieldset class="personal-card__input"> 
+              <label for="phonenumber" class="personal-card__field-name">Номер телефона</label>
+              <input type="text" class="personal-card__fieldset personal-card__fieldset_phonenumber" id="phonenumber" placeholder="Номер телефона" required> <!-- После подключение js данные будут вставляться данные профиля, т.к. все поля обязательны для заполнениядобавляем атрибут required -->
+              <label for="email" class="personal-card__field-name">E-mail</label>
+              <input type="email" class="personal-card__fieldset" id="email" placeholder="E-mail" required> 
+              <label for="password" class="personal-card__field-name">Пароль</label>
+              <input type="text" class="personal-card__fieldset" id="password" placeholder="Пароль" required> 
+          </fieldset>
+          <button class="button button_type_disabled personal-card__save-button">Сохранить изменения</button>
+        </div>
+      </li>
+
+
+    </ul>
   </main>
 </body>
 </html>
