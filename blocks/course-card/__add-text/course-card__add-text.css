@@ -5,6 +5,6 @@
   display: flex;
 }
 
-.course-card__add-text:nth-last-of-type() {
+.course-card__add-text:first-of-type {
   margin: 0;
 }
