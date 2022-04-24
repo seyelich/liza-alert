@@ -74,13 +74,6 @@ function createCard(cardNameValue, cardLinkValue, cardLvlValue, cardTextValue) {
   cardLvl.textContent = cardLvlValue;
   cardDescription.textContent = cardTextValue;
 
-  /*if (cardTextValue.length > 120) {
-    cut(cardDescription, cardTextValue);
-  }
-  else {
-    cardDescription.textContent = cardTextValue
-  }*/
-
   cardButton.addEventListener('click', (evt) => {
     evt.target.classList.remove('button_type_active-white');
     evt.target.classList.add('button_type_active-orange');
@@ -103,7 +96,3 @@ function addCard(cardNameValue, cardLinkValue, cardLvlValue, cardTextValue) {
 }
 
 initialCards.forEach((i) => { addCard(i.name, i.link, i.lvl, i.text) });
-
-/*function cut(str, val) {
-  str.textContent = val.slice(0,119) + '...'
-}*/
