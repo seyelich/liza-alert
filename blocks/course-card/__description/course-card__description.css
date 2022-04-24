@@ -1,0 +1,14 @@
+.course-card__description {
+  margin: 0 0 44px 0;
+  font-size: 18px;
+  line-height: 1.33;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+}

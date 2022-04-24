@@ -1,0 +1,10 @@
+.course-card__add-text {
+  margin: 16px 0 0 0;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+}
+
+.course-card__add-text:nth-last-of-type() {
+  margin: 0;
+}

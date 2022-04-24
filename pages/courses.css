@@ -17,3 +17,15 @@
 @import url(../blocks/button/_type/button_type_active-white.css);
 
 @import url(../blocks/button/_type/button_type_disabled.css);
+
+@import url(../blocks/courses-cards/courses-cards.css);
+@import url(../blocks/course-card/course-card.css);
+@import url(../blocks/course-card/__img/course-card__img.css);
+@import url(../blocks/course-card/__title/course-card__title.css);
+@import url(../blocks/course-card/__main-info/course-card__main-info.css);
+@import url(../blocks/course-card/__add-info/course-card__add-info.css);
+@import url(../blocks/course-card/__description/course-card__description.css);
+@import url(../blocks/course-card/__lvl/course-card__lvl.css);
+@import url(../blocks/course-card/__icon/course-card__icon.css);
+@import url(../blocks/course-card/__add-text/course-card__add-text.css);
+@import url(../blocks/course-card/__button/course-card__button.css);
