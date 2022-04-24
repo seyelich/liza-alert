@@ -2,7 +2,7 @@
 @import url(../blocks/header/header.css);
 
 @import url(../blocks/header/__navigation/header__navigation.css);
-@import url(../blocks/header/__header-item/header__navigation-item.css);
+@import url(../blocks/header/__navigation-item/header__navigation-item.css);
 @import url(../blocks/header/__navigation-link/header__navigation-link.css);
 @import url(../blocks/header/__navigation-link/_active/header__navigation-link_active.css);
 @import url(../blocks/header/__navigation-text/header__navigation-text.css);
