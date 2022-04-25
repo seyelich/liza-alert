@@ -4,6 +4,8 @@
 
 @import url(../blocks/page/page.css);
 
+@import url(../pages/header.css);
+
 @import url(../blocks/card/card.css);
 
 @import url(../blocks/content/content.css);
