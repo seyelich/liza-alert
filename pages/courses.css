@@ -5,7 +5,6 @@
 @import url(../blocks/page/page.css);
 @import url(../blocks/card/card.css);
 @import url(../blocks/content/content.css);
-<<<<<<< HEAD
 @import url(../blocks/content/_title/content_title.css);
 @import url(../blocks/filters/filters.css);
 
@@ -29,15 +28,3 @@
 @import url(../blocks/filters/__text/_active/filters__text_active.css);
 @import url(../blocks/filters/__hide-icon/_opened/filters__hide-icon_opened.css);
 @import url(../blocks/filters/__checkboxes/_opened/filters__checkboxes_opened.css);
-=======
-
-@import url(../blocks/content/__title/content__title.css);
-
-@import url(../blocks/button/button.css);
-
-@import url(../blocks/button/_type/button_type_active-orange.css);
-
-@import url(../blocks/button/_type/button_type_active-white.css);
-
-@import url(../blocks/button/_type/button_type_disabled.css);
->>>>>>> develop
