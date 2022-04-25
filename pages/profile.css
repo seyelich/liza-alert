@@ -3,11 +3,22 @@
 @import url(../vendor/fonts.css);
 
 @import url(../blocks/page/page.css);
+@import url(../blocks/card/card.css);
+@import url(../blocks/header/header.css);
 
-@import url(../pages/header.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__navigation-item/header__navigation-item.css);
+@import url(../blocks/header/__navigation-link/header__navigation-link.css);
+@import url(../blocks/header/__navigation-text/header__navigation-text.css);
+@import url(../blocks/header/__navigation/header__navigation.css);
 
 @import url(../blocks/card/card.css);
-
 @import url(../blocks/content/content.css);
-
 @import url(../blocks/content/__title/content__title.css);
+
+@import url(../blocks/button/button.css);
+
+@import url(../blocks/header/__navigation-link/_active/header__navigation-link_active.css);
+@import url(../blocks/button/_type/button_type_active-orange.css);
+@import url(../blocks/button/_type/button_type_active-white.css);
+@import url(../blocks/button/_type/button_type_disabled.css);
