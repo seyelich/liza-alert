@@ -1,0 +1,4 @@
+.filters__label {
+  display: flex;
+  cursor: pointer;
+}
