@@ -1,6 +1,6 @@
 .filters__selected-item {
   width: fit-content;
-  max-width: 100%;
+  max-width: 50%;
   margin-left: 10px;
   margin-bottom: 10px;
   display: flex;

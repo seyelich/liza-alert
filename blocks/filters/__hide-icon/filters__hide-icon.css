@@ -2,7 +2,8 @@
   width: 24px;
   height: 24px;
   display: inline-block;
-  background-image: url(../../../images/filters__open-button.svg);
+  background-image: url(../../../images/filters__hide-button.svg);
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
