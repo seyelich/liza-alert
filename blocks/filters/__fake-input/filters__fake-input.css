@@ -1,0 +1,9 @@
+.filters__fake-input {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  background-image: url(../../../images/filters__fake-input_disabled.svg);
+  background-color: inherit;
+  background-size: 100%;
+  background-position: center;
+}

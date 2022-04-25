@@ -1,0 +1,18 @@
+.filters__selected-item {
+  width: fit-content;
+  max-width: 50%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #E6E7EB;
+  border-radius: 16px;
+}
+
+.filters__selected-item:first-of-type {
+  margin-left: 0;
+}
+
+.filters__selected-item:nth-of-type(3n) {
+  margin-left: 0;
+}

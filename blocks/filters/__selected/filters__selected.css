@@ -1,0 +1,6 @@
+.filters__selected {
+  margin-top: 32px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
