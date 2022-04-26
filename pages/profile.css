@@ -12,6 +12,9 @@
 @import url(../blocks/profile-card/profile-card.css);
 @import url(../blocks/personal-card/personal-card.css);
 @import url(../blocks/account/account.css);
+@import url(../blocks/data/data.css);
+@import url(../blocks/data-text/data-text.css);
+@import url(../blocks/foto/foto.css);
 
 @import url(../blocks/content/__title/content__title.css);
 @import url(../blocks/header/__title/header__title.css);
@@ -33,9 +36,12 @@
 @import url(../blocks/personal-card/__input-field/personal-card__input-field.css);
 @import url(../blocks/personal-card/__save-button/personal-card__save-button.css);
 @import url(../blocks/personal-card/__title/personal-card__title.css);
-
+@import url(../blocks/data-text/__account/data-text__account.css);
+@import url(../blocks/data-text/__personal/data-text__personal.css);
+@import url(../blocks/foto-text/foto-text.css);
 
 @import url(../blocks/header/__navigation-link/_active/header__navigation-link_active.css);
 @import url(../blocks/button/_type/button_type_active-orange.css);
 @import url(../blocks/button/_type/button_type_active-white.css);
 @import url(../blocks/button/_type/button_type_disabled.css);
+@import url(../blocks/content/_title/content_title.css);
