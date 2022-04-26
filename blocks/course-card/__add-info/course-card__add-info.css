@@ -1,0 +1,6 @@
+.course-card__add-info {
+  margin: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
