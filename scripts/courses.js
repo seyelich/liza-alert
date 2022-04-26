@@ -5,7 +5,15 @@ const filters = {
   disable: false,
   recorded: false,
   active: false,
-  complited: false
+  complited: false,
+
+  get levels () {
+    return (this.beginner || this.experienced || this.professional);
+  },
+
+  get status () {
+    return (this.disable || this.recorded || this.active || this.complited);
+  }
 }
 
 const hideButtons = document.querySelectorAll('.filters__hide-button');
@@ -16,10 +24,7 @@ const filterResetButton = document.querySelector('.filters__reset-button');
 
 
 function filtersAreActive (filters) {
-  for (filter in filters) {
-    if (filters[filter] === true) return true;
-  }
-  return false;
+  return (filters.levels || filters.status);
 }
 
 function setFilter (filters, filter, value) {
