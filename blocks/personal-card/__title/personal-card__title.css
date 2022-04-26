@@ -1,0 +1,13 @@
+.personal-card__title{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #212329;
+    width: 584px;
+    align-self: center;
+    margin-top: 32px;
+}

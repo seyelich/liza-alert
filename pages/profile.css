@@ -5,17 +5,28 @@
 @import url(../blocks/page/page.css);
 @import url(../blocks/card/card.css);
 @import url(../blocks/header/header.css);
+@import url(../blocks/content/content.css);
+@import url(../blocks/button/button.css);
+@import url(../blocks/profile-cards/profile-cards.css);
+@import url(../blocks/profile-card/profile-card.css);
+@import url(../blocks/personal-card/personal-card.css);
+@import url(../blocks/account/account.css);
 
+@import url(../blocks/content/__title/content__title.css);
 @import url(../blocks/header/__title/header__title.css);
 @import url(../blocks/header/__navigation-item/header__navigation-item.css);
 @import url(../blocks/header/__navigation-link/header__navigation-link.css);
 @import url(../blocks/header/__navigation-text/header__navigation-text.css);
 @import url(../blocks/header/__navigation/header__navigation.css);
+@import url(../blocks/personal-card/__field-name/personal-card__field-name.css);
+@import url(../blocks/personal-card/__fieldset/personal-card__fieldset.css);
+@import url(../blocks/personal-card/__fieldset/_phonenumber/personal-card__fieldset_phonenumber.css);
+@import url(../blocks/personal-card/__fieldset/_photo/personal-card__fieldset_photo.css);
+@import url(../blocks/personal-card/__input/personal-card__input.css);
+@import url(../blocks/personal-card/__input-field/personal-card__input-field.css);
+@import url(../blocks/personal-card/__save-button/personal-card__save-button.css);
+@import url(../blocks/personal-card/__title/personal-card__title.css);
 
-@import url(../blocks/card/card.css);
-@import url(../blocks/content/content.css);
-@import url(../blocks/content/__title/content__title.css);
-@import url(../blocks/button/button.css);
 
 @import url(../blocks/header/__navigation-link/_active/header__navigation-link_active.css);
 @import url(../blocks/button/_type/button_type_active-orange.css);
