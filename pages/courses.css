@@ -8,6 +8,8 @@
 @import url(../blocks/card/card.css);
 @import url(../blocks/content/content.css);
 @import url(../blocks/filters/filters.css);
+@import url(../blocks/courses-cards/courses-cards.css);
+@import url(../blocks/course-card/course-card.css);
 
 @import url(../blocks/header/__title/header__title.css);
 @import url(../blocks/header/__navigation-item/header__navigation-item.css);
@@ -34,6 +36,15 @@
 @import url(../blocks/filters/__selected-item/filters__selected-item.css);
 @import url(../blocks/filters/__selected-name/filters__selected-name.css);
 @import url(../blocks/filters/__remove-button/filters__remove-button.css);
+@import url(../blocks/course-card/__img/course-card__img.css);
+@import url(../blocks/course-card/__title/course-card__title.css);
+@import url(../blocks/course-card/__main-info/course-card__main-info.css);
+@import url(../blocks/course-card/__add-info/course-card__add-info.css);
+@import url(../blocks/course-card/__description/course-card__description.css);
+@import url(../blocks/course-card/__lvl/course-card__lvl.css);
+@import url(../blocks/course-card/__icon/course-card__icon.css);
+@import url(../blocks/course-card/__add-text/course-card__add-text.css);
+@import url(../blocks/course-card/__button/course-card__button.css);
 
 @import url(../blocks/header/__navigation-link/_active/header__navigation-link_active.css);
 @import url(../blocks/button/_type/button_type_active-orange.css);
