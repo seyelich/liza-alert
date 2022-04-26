@@ -8,6 +8,7 @@
 @import url(../blocks/card/card.css);
 @import url(../blocks/content/content.css);
 @import url(../blocks/filters/filters.css);
+@import url(../blocks/button/button.css);
 @import url(../blocks/courses-cards/courses-cards.css);
 @import url(../blocks/course-card/course-card.css);
 
@@ -16,10 +17,7 @@
 @import url(../blocks/header/__navigation-link/header__navigation-link.css);
 @import url(../blocks/header/__navigation-text/header__navigation-text.css);
 @import url(../blocks/header/__navigation/header__navigation.css);
-
-
 @import url(../blocks/content/__title/content__title.css);
-
 @import url(../blocks/filters/__window/filters__window.css);
 @import url(../blocks/filters/__container/filters__container.css);
 @import url(../blocks/filters/__heading/filters__heading.css);
