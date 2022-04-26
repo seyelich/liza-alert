@@ -11,6 +11,7 @@
 @import url(../blocks/button/button.css);
 @import url(../blocks/courses-cards/courses-cards.css);
 @import url(../blocks/course-card/course-card.css);
+@import url(../blocks/course-card/_hidden/course-card_hidden.css);
 
 @import url(../blocks/header/__title/header__title.css);
 @import url(../blocks/header/__navigation-item/header__navigation-item.css);
@@ -32,6 +33,7 @@
 @import url(../blocks/filters/__fake-input/filters__fake-input.css);
 @import url(../blocks/filters/__selected/filters__selected.css);
 @import url(../blocks/filters/__selected-item/filters__selected-item.css);
+@import url(../blocks/filters/__selected-item/_hidden/filters__selected-item_hidden.css);
 @import url(../blocks/filters/__selected-name/filters__selected-name.css);
 @import url(../blocks/filters/__remove-button/filters__remove-button.css);
 @import url(../blocks/course-card/__img/course-card__img.css);

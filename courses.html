@@ -67,21 +67,21 @@
           <ul class="filters__checkboxes filters__checkboxes_opened">
             <li class="filters__checkbox">
               <label for="beginner" class="filters__label">
-                <input type="checkbox" id="beginner" class="filters__input">
+                <input type="checkbox" id="beginner" class="filters__input filters__input_type_level">
                 <div class="filters__fake-input"></div>
                 <span class="filters__text">Новичок</span>
               </label>
             </li>
             <li class="filters__checkbox">
               <label for="experienced" class="filters__label">
-                <input type="checkbox" id="experienced" class="filters__input">
+                <input type="checkbox" id="experienced" class="filters__input filters__input_type_level">
                 <div class="filters__fake-input"></div>
                 <span class="filters__text">Бывалый</span>
               </label>
             </li>
             <li class="filters__checkbox">
               <label for="professional" class="filters__label">
-                <input type="checkbox" id="professional" class="filters__input">
+                <input type="checkbox" id="professional" class="filters__input filters__input_type_level">
                 <div class="filters__fake-input"></div>
                 <span class="filters__text">Профессионал</span>
               </label>
@@ -97,28 +97,28 @@
           <ul class="filters__checkboxes filters__checkboxes_opened">
             <li class="filters__checkbox">
               <label for="disable" class="filters__label">
-                <input type="checkbox" id="disable" class="filters__input">
+                <input type="checkbox" id="disable" class="filters__input filters__input_type_status">
                 <div class="filters__fake-input"></div>
                 <span class="filters__text">Не активный</span>
               </label>
             </li>
             <li class="filters__checkbox">
               <label for="recorded" class="filters__label">
-                <input type="checkbox" id="recorded" class="filters__input">
+                <input type="checkbox" id="recorded" class="filters__input filters__input_type_status">
                 <div class="filters__fake-input"></div>
                 <span class="filters__text">Вы записаны</span>
               </label>
             </li>
             <li class="filters__checkbox">
               <label for="active" class="filters__label">
-                <input type="checkbox" id="active" class="filters__input">
+                <input type="checkbox" id="active" class="filters__input filters__input_type_status">
                 <div class="filters__fake-input"></div>
                 <span class="filters__text">Активный</span>
               </label>
             </li>
             <li class="filters__checkbox">
               <label for="complited" class="filters__label">
-                <input type="checkbox" id="complited" class="filters__input">
+                <input type="checkbox" id="complited" class="filters__input filters__input_type_status">
                 <div class="filters__fake-input"></div>
                 <span class="filters__text">Пройден</span>
               </label>
@@ -127,13 +127,17 @@
         </div>
       </form>
       <div class="filters__selected">
-        <div class="filters__selected-item">
+        <div class="filters__selected-item filters__selected-item_hidden" id="item-beginner">
           <span class="filters__selected-name">Новичок</span>
-          <button class="filters__remove-button"></button>
+          <button class="filters__remove-button" type="button"></button>
         </div>
-        <div class="filters__selected-item">
+        <div class="filters__selected-item filters__selected-item_hidden" id="item-experienced">
           <span class="filters__selected-name">Бывалый</span>
-          <button class="filters__remove-button"></button>
+          <button class="filters__remove-button" type="button"></button>
+        </div>
+        <div class="filters__selected-item filters__selected-item_hidden" id="item-professional">
+          <span class="filters__selected-name">Профессионал</span>
+          <button class="filters__remove-button" type="button"></button>
         </div>
       </div>
     </section>
@@ -158,7 +162,7 @@
                 <svg class="course-card__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm0-14a1 1 0 0 0-1 1v4.42l-2.1 1.21a1 1 0 0 0 .5 1.87 1 1 0 0 0 .5-.13l2.6-1.5.09-.09.16-.13a.863.863 0 0 0 .1-.16.891.891 0 0 0 .08-.17.65.65 0 0 0 .05-.2L12 12V7a1 1 0 0 0-1-1Z" fill="#212329"/></svg>
                 144 ч
               </p>
-              <button class="course-card__button button button_type_active-white" type="button">Записаться</button>
+              <button class="course-card__button button" type="button"></button>
             </div>
           </li>
         </template>
