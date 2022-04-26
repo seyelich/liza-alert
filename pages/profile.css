@@ -7,6 +7,7 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/content/content.css);
 @import url(../blocks/button/button.css);
+@import url(../blocks/account-info/account-info.css);
 @import url(../blocks/profile-cards/profile-cards.css);
 @import url(../blocks/profile-card/profile-card.css);
 @import url(../blocks/personal-card/personal-card.css);
@@ -18,6 +19,12 @@
 @import url(../blocks/header/__navigation-link/header__navigation-link.css);
 @import url(../blocks/header/__navigation-text/header__navigation-text.css);
 @import url(../blocks/header/__navigation/header__navigation.css);
+@import url(../blocks/account-info/__avatar/account-info__avatar.css);
+@import url(../blocks/account-info/__name/account-info__name.css);
+@import url(../blocks/account-info/__perk-list/account-info__perk-list.css);
+@import url(../blocks/account-info/__perk/account-info__perk.css);
+@import url(../blocks/account-info/__perk-icon/account-info__perk-icon.css);
+@import url(../blocks/account-info/__button/account-info__button.css);
 @import url(../blocks/personal-card/__field-name/personal-card__field-name.css);
 @import url(../blocks/personal-card/__fieldset/personal-card__fieldset.css);
 @import url(../blocks/personal-card/__fieldset/_phonenumber/personal-card__fieldset_phonenumber.css);

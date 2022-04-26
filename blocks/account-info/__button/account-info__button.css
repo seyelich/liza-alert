@@ -1,0 +1,20 @@
+.account-info__button {
+  margin-top: 15px;
+  padding: 13px 23px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-radius: 16px;
+  border: #e6e7eb solid 1.2px;
+  background-color: #fff;
+  color: #f60;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.account-info__button:hover {
+  color: #f06000;
+  border-color: #f06000;
+}
