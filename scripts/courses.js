@@ -99,10 +99,19 @@ const cardsContainer = document.querySelector('.courses-cards');
 
 
 
-function setLevelFilter(filters, filter, value) {
-  filters.level[filter] = value;
+function setFilter(type, filter, value) {
+  filters[type][filter] = value;
+  if (value && filter === 'disable') filters.status['active'] = false;
+  if (value && filter === 'active') filters.status['disable'] = false;
+  renderFilters();
+}
+
+function renderFilters() {
   for (const checkbox of filterLevelCheckboxes) {
     checkbox.checked = filters.level[checkbox.id];
+  }
+  for (const checkbox of filterStatusCheckboxes) {
+    checkbox.checked = filters.status[checkbox.id];
   }
   for (item of selectedItems) {
     const id = item.id.slice(5);
@@ -114,19 +123,10 @@ function setLevelFilter(filters, filter, value) {
   }
 }
 
-function setStatusFilter(filters, filter, value) {
-  filters.status[filter] = value;
-  if (value && filter === 'disable') filters.status['active'] = false;
-  if (value && filter === 'active') filters.status['disable'] = false;
-  for (const checkbox of filterStatusCheckboxes) {
-    checkbox.checked = filters.status[checkbox.id];
-  }
-}
-
 function resetFilters(filters) {
   for (const filter in filters.level) filters.level[filter] = false;
   for (const filter in filters.status) filters.status[filter] = false;
-  for (const item of selectedItems) item.classList.add('filters__selected-item_hidden');
+  renderFilters();
 }
 
 function checkFilter (card, type) {
@@ -232,7 +232,7 @@ filterResetButton.addEventListener('click', function (event) {
 filterLevelCheckboxes.forEach(item => {
   item.addEventListener('click', function (event) {
     const checkbox = event.target;
-    setLevelFilter(filters, checkbox.id, checkbox.checked);
+    setFilter('level', checkbox.id, checkbox.checked);
     applyFilters(filters);
   })
 })
@@ -240,7 +240,7 @@ filterLevelCheckboxes.forEach(item => {
 filterStatusCheckboxes.forEach(item => {
   item.addEventListener('click', function (event) {
     const checkbox = event.target;
-    setStatusFilter(filters, checkbox.id, checkbox.checked);
+    setFilter('status', checkbox.id, checkbox.checked);
     applyFilters(filters);
   })
 })
@@ -248,7 +248,7 @@ filterStatusCheckboxes.forEach(item => {
 selectedItemsButtons.forEach(item => {
   item.addEventListener('click', function (event) {
     const id = event.target.parentElement.id.slice(5);
-    setLevelFilter(filters, id, false);
+    setFilter('level', id, false);
     applyFilters(filters);
   })
 })
