@@ -23,6 +23,7 @@
 @import url(../blocks/filters/__heading/filters__heading.css);
 @import url(../blocks/filters/__reset-button/filters__reset-button.css);
 @import url(../blocks/filters/__text/filters__text.css);
+/* @import url(../blocks/filters/__text/_active/filters__text_active.css); */
 @import url(../blocks/filters/__hide-button/filters__hide-button.css);
 @import url(../blocks/filters/__hide-icon/filters__hide-icon.css);
 @import url(../blocks/filters/__checkbox/filters__checkbox.css);
@@ -30,8 +31,10 @@
 @import url(../blocks/filters/__input/filters__input.css);
 @import url(../blocks/filters/__label/filters__label.css);
 @import url(../blocks/filters/__fake-input/filters__fake-input.css);
+/* @import url(../blocks/filters/__fake-input/_active/filters__fake-input_active.css); */
 @import url(../blocks/filters/__selected/filters__selected.css);
 @import url(../blocks/filters/__selected-item/filters__selected-item.css);
+@import url(../blocks/filters/__selected-item/_hidden/filters__selected-item_hidden.css);
 @import url(../blocks/filters/__selected-name/filters__selected-name.css);
 @import url(../blocks/filters/__remove-button/filters__remove-button.css);
 
