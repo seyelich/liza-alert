@@ -4,3 +4,8 @@
   border: 1.2px solid #E6E7EB;
   box-sizing: border-box;
 }
+
+.button_type_active-white:hover {
+  color: #f06000;
+  border-color: #f06000;
+}
