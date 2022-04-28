@@ -13,6 +13,7 @@
     font-size: 18px;
     line-height: 24px;
     overflow: hidden;
+    max-height: 48px;
 }
 
 .personal-card__fieldset:focus{
