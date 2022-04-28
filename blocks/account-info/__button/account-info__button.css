@@ -12,6 +12,7 @@
   line-height: 1;
   font-weight: 500;
   cursor: pointer;
+  transition: border-color .3s ease-in-out, color .3s ease-in-out;
 }
 
 .account-info__button:hover {

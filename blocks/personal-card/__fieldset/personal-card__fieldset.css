@@ -9,6 +9,7 @@
     color: #212329;
     background: url(../../../images/pen-vector.svg) no-repeat 546px center;
     outline: none;
+    transition: border .3s ease-in-out;
 }
 
 .personal-card__fieldset:last-of-type{

@@ -6,4 +6,5 @@
   background-color: inherit;
   background-size: 100%;
   background-position: center;
+  transition: background-image .3s ease-in-out;
 }

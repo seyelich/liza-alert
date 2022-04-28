@@ -6,4 +6,5 @@
   background-image: url(../../../images/filters__hide-button.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: transform .3s ease-in-out;
 }
