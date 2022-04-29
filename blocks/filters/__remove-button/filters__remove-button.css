@@ -5,8 +5,11 @@
   height: 20px;
   margin: auto 2px auto 0;
   border-radius: 50%;
-  background-color: inherit;
   background-image: url(../../../images/filters__remove-button.svg);
   background-position: center;
   cursor: pointer;
+}
+
+.filters__remove-button:hover {
+  opacity: 0.8;
 }
