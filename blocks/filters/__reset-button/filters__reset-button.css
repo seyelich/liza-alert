@@ -10,6 +10,7 @@
   cursor: pointer;
   background-color: inherit;
   border: none;
+  transition: opacity .3s ease-in-out;
 }
 
 .filters__reset-button:hover {

@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/courses.css">
+    <title>Курсы</title>
+  </head>
 
 <head>
   <meta charset="UTF-8">
@@ -47,18 +54,21 @@
           <span class="filters__heading">Фильтры</span>
           <button type="reset" class="filters__reset-button" aria-label="Очистить">Очистить</button>
         </div>
+
         <div class="filters__container">
           <div class="filters__hide-button" aria-label="Открыть фильтры по категории">
             <span class="filters__text">Категория</span>
             <div class="filters__hide-icon"></div>
           </div>
         </div>
+
         <div class="filters__container">
           <div class="filters__hide-button" aria-label="Открыть фильтры по тематике">
             <span class="filters__text">Тематика</span>
             <div class="filters__hide-icon"></div>
           </div>
         </div>
+
         <div class="filters__container">
           <div class="filters__hide-button" aria-label="Открыть фильтры по уровню">
             <span class="filters__text">Уровень</span>
@@ -126,6 +136,7 @@
           </ul>
         </div>
       </form>
+
       <div class="filters__selected">
         <div class="filters__selected-item filters__selected-item_hidden" id="item-beginner">
           <span class="filters__selected-name">Новичок</span>
@@ -162,7 +173,7 @@
                 <svg class="course-card__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm0-14a1 1 0 0 0-1 1v4.42l-2.1 1.21a1 1 0 0 0 .5 1.87 1 1 0 0 0 .5-.13l2.6-1.5.09-.09.16-.13a.863.863 0 0 0 .1-.16.891.891 0 0 0 .08-.17.65.65 0 0 0 .05-.2L12 12V7a1 1 0 0 0-1-1Z" fill="#212329"/></svg>
                 144 ч
               </p>
-              <button class="course-card__button button" type="button"></button>
+              <button class="course-card__button button button_type_active-white" type="button">Записаться</button>
             </div>
           </li>
         </template>
