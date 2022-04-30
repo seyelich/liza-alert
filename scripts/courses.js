@@ -189,9 +189,13 @@ function createCard(cardNameValue, cardLinkValue, cardLvlValue, cardTextValue, c
         evt.target.classList.remove('button_type_active-white');
         evt.target.classList.add('button_type_active-orange');
         evt.target.textContent = 'Продолжить';
+        evt.target.parentElement.parentElement.classList.add('course-card_status_recorded');
+        evt.target.parentElement.parentElement.classList.remove('course-card_status_active');
+        applyFilters(filters);
       });
       break;
     case 'recorded':
+      cardButton.classList.remove('button_type_active-white');
       cardButton.classList.add('button_type_active-orange');
       cardButton.textContent = 'Продолжить';
       break;
