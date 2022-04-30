@@ -192,6 +192,7 @@ function createCard(cardNameValue, cardLinkValue, cardLvlValue, cardTextValue, c
       });
       break;
     case 'recorded':
+      cardButton.classList.remove('button_type_active-white');
       cardButton.classList.add('button_type_active-orange');
       cardButton.textContent = 'Продолжить';
       break;
