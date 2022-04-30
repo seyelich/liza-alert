@@ -10,10 +10,11 @@
   background: url(../../../images/pen-vector.svg) no-repeat 546px center;
   outline: none;
   transition: border .3s ease-in-out;
-}
-
-.personal-card__fieldset:last-of-type{
-  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  overflow: hidden;
+  max-height: 48px;
 }
 
 .personal-card__fieldset:focus{
