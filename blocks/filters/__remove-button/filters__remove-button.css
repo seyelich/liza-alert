@@ -8,6 +8,7 @@
   background-image: url(../../../images/filters__remove-button.svg);
   background-position: center;
   cursor: pointer;
+  transition: opacity .2s ease-in-out;
 }
 
 .filters__remove-button:hover {
