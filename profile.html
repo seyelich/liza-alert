@@ -9,6 +9,9 @@
   </head>
 
   <body class="page">
+
+    <!-- Хедер -->
+
     <header class="header">
       <p class="header__title">Учебная платформа</p>
       <nav class="header__nav">
@@ -34,9 +37,13 @@
     </header>
     <main class="content">
 
+      <!-- Заголовок страницы -->
+
       <h1 class="content__title">Профиль</h1>
 
-      <div class="account-info card">
+      <!-- Карточка информации об аккаунте -->
+
+      <section class="account-info card">
         <img src="./images/portrait.png" alt="Аватарка пользователя" class="account-info__avatar">
         <h2 class="account-info__name">Иванова Анна Сидоровна</h2>
         <ul class="account-info__perk-list">
@@ -57,19 +64,18 @@
           <svg class="account-info__button-icon" width="17" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M.5 10a1 1 0 0 0 1 1h7.59l-2.3 2.29a1 1 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l4-4a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76 1 1 0 0 0-.21-.33l-4-4a1.004 1.004 0 1 0-1.42 1.42L9.09 9H1.5a1 1 0 0 0-1 1Zm13-10h-10a3 3 0 0 0-3 3v3a1 1 0 0 0 2 0V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-10a1 1 0 0 1-1-1v-3a1 1 0 1 0-2 0v3a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3Z"/></svg>
           Выйти из аккаунта
         </button>
-      </div>
+      </section>
 
       <!-- Список карточек профиля -->
+
       <ul class="profile-cards">
 
-        <!-- Элементы списка карточек профиля -->
+        <!-- Форма "Личные данные" -->
+
         <li class="profile-card">
-
-          <!-- Карточка личных данных -->
           <div class="personal-card card">
-
-            <!-- Наполнение карточки личных данных -->
             <h2 class="personal-card__title">Личные данные</h2>
+
             <fieldset class="personal-card__input">
               <label for="username" class="personal-card__field-name">ФИО</label>
               <input type="text" class="personal-card__fieldset" id="username" placeholder="ФИО" required> <!-- После подключение js данные будут вставляться данные профиля, т.к. все поля обязательны для заполнениядобавляем атрибут required -->
@@ -88,6 +94,9 @@
             </fieldset>
             <button class="button button_type_active-orange personal-card__save-button">Сохранить изменения</button>
           </div>
+
+          <!-- Пояснения к форме "Личные данные" -->
+
           <div class="data">
             <ul class="data-text">
               <li class="data-text__personal">Просьба указывать настоящие ФИО, это нужно для получения сертификатов</li>
@@ -102,13 +111,13 @@
           </div>
         </li>
 
-        <!-- Элементы списка карточек профиля -->
-        <li class="profile-card">
+        <!-- Форма "Аккаунт" -->
 
-          <!-- Карточка аккаунта -->
+        <li class="profile-card">
           <div class="account card">
             <h2 class="personal-card__title">Аккаунт</h2>
             <fieldset class="personal-card__input">
+
               <label for="phonenumber" class="personal-card__field-name">Номер телефона</label>
               <input type="text" class="personal-card__fieldset personal-card__fieldset_phonenumber" id="phonenumber" placeholder="Номер телефона" required> <!-- После подключение js данные будут вставляться данные профиля, т.к. все поля обязательны для заполнениядобавляем атрибут required -->
               <label for="email" class="personal-card__field-name">Email</label>
@@ -118,6 +127,9 @@
             </fieldset>
             <button class="button button_type_disabled personal-card__save-button">Сохранить изменения</button>
           </div>
+
+          <!-- Пояснения к форме "Аккаунт" -->
+
           <div class="data">
             <ul class="data-text">
               <li class="data-text__account">Номер телефона используется как&nbsp;уникальный идентификатор пользователя, поэтому его нельзя поменять вручную</li>

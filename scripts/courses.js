@@ -162,7 +162,7 @@ hideButtons.forEach(item => {
   })
 })
 
-filterResetButton.addEventListener('click', function (event) {
+filterResetButton.addEventListener('click', function () {
   resetFilters(filters);
   applyFilters(filters);
 })
