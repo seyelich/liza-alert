@@ -1,3 +1,26 @@
+const hideButtons = document.querySelectorAll('.filters__hide-button');
+const filterLevelCheckboxes = document.querySelectorAll('.filters__input_type_level');
+const filterStatusCheckboxes = document.querySelectorAll('.filters__input_type_status');
+const selectedItems = document.querySelectorAll('.filters__selected-item');
+const selectedItemsButtons = document.querySelectorAll('.filters__remove-button');
+const filterResetButton = document.querySelector('.filters__reset-button');
+const cardsContainer = document.querySelector('.courses-cards');
+
+// Кнопка сворачивания фильтра
+
+hideButtons.forEach(item => {
+  item.addEventListener('click', function (event) {
+    if (!event.target.hasAttribute('aria-label')) {
+      event.target.parentElement.lastElementChild.classList.toggle('filters__hide-icon_opened');
+      event.target.parentElement.nextElementSibling.classList.toggle('filters__checkboxes_opened');
+    }
+    else {
+      event.target.lastElementChild.classList.toggle('filters__hide-icon_opened');
+      event.target.nextElementSibling.classList.toggle('filters__checkboxes_opened');
+    }
+  })
+})
+
 const filters = {
   level: {
     beginner: false,
@@ -22,14 +45,6 @@ const filters = {
     return (this.level.isActive || this.status.isActive);
   }
 }
-
-const hideButtons = document.querySelectorAll('.filters__hide-button');
-const filterLevelCheckboxes = document.querySelectorAll('.filters__input_type_level');
-const filterStatusCheckboxes = document.querySelectorAll('.filters__input_type_status');
-const selectedItems = document.querySelectorAll('.filters__selected-item');
-const selectedItemsButtons = document.querySelectorAll('.filters__remove-button');
-const filterResetButton = document.querySelector('.filters__reset-button');
-const cardsContainer = document.querySelector('.courses-cards');
 
 
 
@@ -146,21 +161,6 @@ function addCard(cardNameValue, cardLinkValue, cardLvlValue, cardTextValue, card
   const cardEl = createCard(cardNameValue, cardLinkValue, cardLvlValue, cardTextValue, cardStatusValue);
   cardsContainer.append(cardEl);
 }
-
-
-
-hideButtons.forEach(item => {
-  item.addEventListener('click', function (event) {
-    if (!event.target.hasAttribute('aria-label')) {
-      event.target.parentElement.lastElementChild.classList.toggle('filters__hide-icon_opened');
-      event.target.parentElement.nextElementSibling.classList.toggle('filters__checkboxes_opened');
-    }
-    else {
-      event.target.lastElementChild.classList.toggle('filters__hide-icon_opened');
-      event.target.nextElementSibling.classList.toggle('filters__checkboxes_opened');
-    }
-  })
-})
 
 filterResetButton.addEventListener('click', function () {
   resetFilters(filters);
