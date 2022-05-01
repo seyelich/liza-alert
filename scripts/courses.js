@@ -1,3 +1,7 @@
+// ============================
+// Объявляем константы DOM
+// ============================
+
 const hideButtons = document.querySelectorAll('.filters__hide-button');
 const filterLevelCheckboxes = document.querySelectorAll('.filters__input_type_level');
 const filterStatusCheckboxes = document.querySelectorAll('.filters__input_type_status');
@@ -6,21 +10,9 @@ const selectedItemsButtons = document.querySelectorAll('.filters__remove-button'
 const filterResetButton = document.querySelector('.filters__reset-button');
 const cardsContainer = document.querySelector('.courses-cards');
 
-// Кнопка сворачивания фильтра
-
-hideButtons.forEach(item => {
-  item.addEventListener('click', function (event) {
-    if (!event.target.hasAttribute('aria-label')) {
-      event.target.parentElement.lastElementChild.classList.toggle('filters__hide-icon_opened');
-      event.target.parentElement.nextElementSibling.classList.toggle('filters__checkboxes_opened');
-    }
-    else {
-      event.target.lastElementChild.classList.toggle('filters__hide-icon_opened');
-      event.target.nextElementSibling.classList.toggle('filters__checkboxes_opened');
-    }
-  })
-})
-
+// ============================
+// Объект для работы фильтров
+// ============================
 const filters = {
   level: {
     beginner: false,
@@ -48,6 +40,10 @@ const filters = {
 
 
 
+// ============================
+// Объявляем функции работы фильтров
+// ============================
+// Установка значения фильтра
 function setFilter(type, filter, value) {
   filters[type][filter] = value;
   if (value && filter === 'disable') filters.status['active'] = false;
@@ -55,6 +51,7 @@ function setFilter(type, filter, value) {
   renderFilters();
 }
 
+// Отображение активных фильтров на странице
 function renderFilters() {
   for (const checkbox of filterLevelCheckboxes) {
     checkbox.checked = filters.level[checkbox.id];
@@ -72,12 +69,14 @@ function renderFilters() {
   }
 }
 
+// Сброс всех фильтров
 function resetFilters(filters) {
   for (const filter in filters.level) filters.level[filter] = false;
   for (const filter in filters.status) filters.status[filter] = false;
   renderFilters();
 }
 
+// Проверка карточки на соответствие фильтру
 function checkFilter (card, type) {
   if (!filters[type].isActive) return true;
   const filteredClasses = [];
@@ -90,6 +89,7 @@ function checkFilter (card, type) {
   return false;
 }
 
+// Применение фильтров к отображению карточек
 function applyFilters(filters) {
   if (!filters.isActive) {
     for (const card of courseCards) card.classList.remove('course-card_hidden');
@@ -104,6 +104,10 @@ function applyFilters(filters) {
   }
 }
 
+// ============================
+// Объявляем функции карточек курсов
+// ============================
+// Создание карточки
 function createCard(cardNameValue, cardLinkValue, cardLvlValue, cardTextValue, cardStatusValue) {
   const cardTemplate = document.querySelector('#course-card-template').content;
   const cardEl = cardTemplate.querySelector('.course-card').cloneNode(true);
@@ -157,16 +161,38 @@ function createCard(cardNameValue, cardLinkValue, cardLvlValue, cardTextValue, c
   return cardEl;
 }
 
+// Добавление карточки
 function addCard(cardNameValue, cardLinkValue, cardLvlValue, cardTextValue, cardStatusValue) {
   const cardEl = createCard(cardNameValue, cardLinkValue, cardLvlValue, cardTextValue, cardStatusValue);
   cardsContainer.append(cardEl);
 }
 
+
+
+// ============================
+// Навешиваем обработчики событий
+// ============================
+// Кнопка сворачивания фильтра
+hideButtons.forEach(item => {
+  item.addEventListener('click', function (event) {
+    if (!event.target.hasAttribute('aria-label')) {
+      event.target.parentElement.lastElementChild.classList.toggle('filters__hide-icon_opened');
+      event.target.parentElement.nextElementSibling.classList.toggle('filters__checkboxes_opened');
+    }
+    else {
+      event.target.lastElementChild.classList.toggle('filters__hide-icon_opened');
+      event.target.nextElementSibling.classList.toggle('filters__checkboxes_opened');
+    }
+  })
+})
+
+// Кнопка сброса фильтров
 filterResetButton.addEventListener('click', function () {
   resetFilters(filters);
   applyFilters(filters);
 })
 
+// Чекбоксы фильтров по уровню
 filterLevelCheckboxes.forEach(item => {
   item.addEventListener('click', function (event) {
     const checkbox = event.target;
@@ -175,6 +201,7 @@ filterLevelCheckboxes.forEach(item => {
   })
 })
 
+// Чекбоксы фильтров по статусу
 filterStatusCheckboxes.forEach(item => {
   item.addEventListener('click', function (event) {
     const checkbox = event.target;
@@ -183,6 +210,7 @@ filterStatusCheckboxes.forEach(item => {
   })
 })
 
+// Кнопки удаления фильтров по уровню
 selectedItemsButtons.forEach(item => {
   item.addEventListener('click', function (event) {
     const id = event.target.parentElement.id.slice(5);
@@ -193,5 +221,8 @@ selectedItemsButtons.forEach(item => {
 
 
 
+// ============================
+// Населяем карточки при загрузке страницы
+// ============================
 initialCards.forEach((i) => { addCard(i.name, i.link, i.lvl, i.text, i.status) });
 const courseCards = document.querySelectorAll('.course-card');
