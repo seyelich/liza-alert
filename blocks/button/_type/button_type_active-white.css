@@ -3,9 +3,9 @@
   color: #FF6600;
   border: 1.2px solid #E6E7EB;
   box-sizing: border-box;
+  transition: border .2s ease-in-out;
 }
 
 .button_type_active-white:hover {
-  color: #f06000;
   border-color: #f06000;
 }
