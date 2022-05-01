@@ -153,6 +153,7 @@ function createCard(cardNameValue, cardLinkValue, cardLvlValue, cardTextValue, c
       cardButton.textContent = 'Продолжить';
       break;
     case 'complited':
+      cardButton.classList.remove('button_type_active-white');
       cardButton.classList.add('button_type_disabled');
       cardButton.textContent = 'Пройден';
       cardButton.disabled = true;
