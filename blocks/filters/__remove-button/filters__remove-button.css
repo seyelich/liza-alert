@@ -1,0 +1,16 @@
+.filters__remove-button {
+  border: none;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  margin: auto 2px auto 0;
+  border-radius: 50%;
+  background-image: url(../../../images/filters__remove-button.svg);
+  background-position: center;
+  cursor: pointer;
+  transition: opacity .2s ease-in-out;
+}
+
+.filters__remove-button:hover {
+  opacity: 0.8;
+}

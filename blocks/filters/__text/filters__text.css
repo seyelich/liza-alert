@@ -1,0 +1,13 @@
+.filters__text {
+  display: inline-block;
+  width: 216px;
+  height: 24px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: start;
+  transition: color .3s ease-in-out;
+}
+
+.filters__input[id="beginner"]:checked + .filters__text {
+  color: #F06000;
+}

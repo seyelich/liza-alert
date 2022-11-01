@@ -7,4 +7,5 @@
   font-size: 18px;
   line-height: 24px;
   cursor: pointer;
+  transition: background-color .3s ease-in-out;
 }

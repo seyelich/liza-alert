@@ -1,0 +1,14 @@
+.header__navigation-link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #212329;
+  transition: color .3s ease-in-out;
+}
+
+.header__navigation-link:hover {
+  color: #F06000;
+}

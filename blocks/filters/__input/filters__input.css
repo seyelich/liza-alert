@@ -1,0 +1,30 @@
+.filters__input {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.filters__input[id="beginner"]:checked + .filters__fake-input,
+.filters__input[id="experienced"]:checked + .filters__fake-input,
+.filters__input[id="professional"]:checked + .filters__fake-input,
+.filters__input[id="disable"]:checked + .filters__fake-input,
+.filters__input[id="recorded"]:checked + .filters__fake-input,
+.filters__input[id="active"]:checked + .filters__fake-input,
+.filters__input[id="complited"]:checked + .filters__fake-input {
+  background-image: url(../../../images/filters__fake-input_checked.svg);
+}
+
+.filters__input[id="beginner"]:checked ~ .filters__text,
+.filters__input[id="experienced"]:checked ~ .filters__text,
+.filters__input[id="professional"]:checked ~ .filters__text,
+.filters__input[id="disable"]:checked ~ .filters__text,
+.filters__input[id="recorded"]:checked ~ .filters__text,
+.filters__input[id="active"]:checked ~ .filters__text,
+.filters__input[id="complited"]:checked ~ .filters__text {
+  color: #F06000;
+}

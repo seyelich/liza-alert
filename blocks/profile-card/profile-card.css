@@ -1,0 +1,10 @@
+.profile-card{
+  display: grid;
+  grid-template-columns: 648px 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.profile-card:last-of-type{
+  margin-bottom: 0;
+}

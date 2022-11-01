@@ -1,0 +1,7 @@
+.course-card {
+  max-width: 984px;
+  height: 240px;
+  display: flex;
+  gap: 24px;
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+.data-text {
+  margin: 0;
+  padding: 0 0 0 3px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #9397A3;
+  list-style: none;
+  grid-column: 2;
+}
